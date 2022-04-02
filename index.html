@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content = "IE Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Qasim CODEPATH Project</title>
+    <link rel="stylesheet" href="/style.css" />
+     
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Light and Sound Memory Game</h1>
+    <p>Click Start to begin the game, and repeat the pattern to win! </p>
+
+    <button id="strtBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+    <br /><br /><br /><br /><br /><br />
+
+    <div id="gameButtonArea">
+      <button
+        id="btn1"
+        onclick="guess(1)"
+        onmousedown="startTone(1)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="btn2"
+        onclick="guess(2)"
+        onmousedown="startTone(2)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="btn3"
+        onclick="guess(3)"
+        onmousedown="startTone(3)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="btn4"
+        onclick="guess(4)"
+        onmousedown="startTone(4)"
+        onmouseup="stopTone()"
+      ></button>
+    </div>
+  </body>
+</html>
